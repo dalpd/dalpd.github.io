@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           post-office
+version:        0.1.0.0
+synopsis:       Deniz Alp Durmaz's personal blog.
+category:       Web
+maintainer:     Deniz Alp Durmaz <denizalpd@ogr.iu.edu.tr>
+license:        BSD3
+build-type:     Simple
+
+executable post-office-core
+  main-is: Main.hs
+  other-modules:
+      Paths_post_office
+  hs-source-dirs:
+      app
+  default-extensions:
+      DataKinds
+      FlexibleContexts
+      GADTs
+      InstanceSigs
+      LambdaCase
+      OverloadedStrings
+      RecordWildCards
+      ScopedTypeVariables
+  ghc-options: -Wall
+  build-depends:
+      base
+    , hakyll
+  default-language: Haskell2010

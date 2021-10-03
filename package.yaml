@@ -1,0 +1,29 @@
+name: post-office
+version: 0.1.0.0
+synopsis: Deniz Alp Durmaz's personal blog.
+maintainer: Deniz Alp Durmaz <denizalpd@ogr.iu.edu.tr>
+category: Web
+license: BSD3
+  
+ghc-options: -Wall
+
+default-extensions:
+  - DataKinds
+  - FlexibleContexts
+  - GADTs
+  - InstanceSigs
+  - LambdaCase
+  - OverloadedStrings
+  - RecordWildCards
+  - ScopedTypeVariables
+
+dependencies:
+  - base
+
+executables:
+  post-office-core:
+    main: Main.hs
+    source-dirs:
+      - app
+    dependencies:
+      - hakyll
