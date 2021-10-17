@@ -64,6 +64,10 @@ article .header {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 @media (max-width: 359px) {
   body {
     width: 90%;
@@ -124,7 +128,7 @@ article .header {
 
 @media (min-width: 640px) {
   body {
-    width: 80rem;
+    width: 90rem;
     margin: 0 auto;
     padding: 0;
   }
