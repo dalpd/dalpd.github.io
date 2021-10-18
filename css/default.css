@@ -65,7 +65,7 @@ article .header {
 }
 
 img {
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 359px) {
