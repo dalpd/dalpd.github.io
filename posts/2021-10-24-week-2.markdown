@@ -1,0 +1,57 @@
+---
+title: "Weeknotes: 002"
+---
+## OSS
+A couple of things going on here this week:
+
+#### nixpkgs
+
+##### ghc-vis
+- I decided I shouldn't spend any more time trying to completely bootstrap 
+`ghc-vis` because it's obviously a tricky situation, just disabling library
+profiling was fixing the build so I created a 
+[PR](https://github.com/NixOS/nixpkgs/pull/142425) doing that. I also asked
+for suggestions and got some good ones so I'll try to get back to this 
+sometime soon.
+
+##### svgcairo
+- It turned out the fix I patched `svgcairo` with wasn't working on darwin so
+got pinged about that. Apparently the patch deleted a flag from `cpp-options`
+that was needed on darwin so
+[added it back with a conditional](https://github.com/NixOS/nixpkgs/pull/142492), 
+also got asked to upstream the changes so I did that along with the fix bumping 
+the lower bound on `librsvg`.
+
+##### eventlog2html
+- I _finally_ got to use eventlog2html at work on Friday, realizing the 
+package was broken on darwin I thought I'd see what's wrong but it seemed to 
+work just fine. I also tried on my PC once I got off work and nothing jumped 
+out at me so I created a [PR](https://github.com/NixOS/nixpkgs/pull/142590) 
+unmarking the package as broken.
+
+#### Miscellaneous
+
+##### hs-nix-template
+- I fixed a Github actions issue [here](https://github.com/utdemir/hs-nix-template/pull/26).
+
+##### type-errors-pretty
+- I got back to this tiny feature request on [type-errors-pretty](https://github.com/kowainik/type-errors-pretty/pull/22).
+
+<hr>
+
+## Hobbies
+Like I said the last time I had problems with the solder I had so I got a new one which seemed to help.
+I got two new chisel tips as well, one sized 1.2mm and the other 2.4mm; and they work great! Now that 
+I got all my gear ready I'm hoping I'll be starting a keyboard build pretty soon.
+
+![1.2mm chisel tip (T18-D12) and solder wick](../images/photo_2021-10-24_21-45-42.jpg "Solder and solder accessories")
+
+<hr>
+
+## Books
+We're done with [Convenience Store Woman](https://www.goodreads.com/book/show/38357895-convenience-store-woman). 
+This was also pretty good, it starts as one thing and towards the middle takes a turn. It could also work just
+as this cutesy story about a woman working at a convenience store but how the book evolved towards the end makes
+this a memorable read.
+
+Our next book is: [Incompleteness: The Proof and Paradox of Kurt Gödel](https://www.goodreads.com/book/show/51287.Incompleteness)
